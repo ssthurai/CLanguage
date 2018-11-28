@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
  
-/* Make the data structure self-contained.  Element at row i and col j
-   is x[i * w + j].  More often than not, though,  you might want
-   to represent a matrix some other way */
+/* Element at row i and col j is x[i * w + j]. */
+/* Defining a data strcutre. */
 typedef struct { int h, w; double *x;} matrix_t, *matrix;
  
 inline double dot(double *a, double *b, int len, int step)
